@@ -1,0 +1,44 @@
+<section id="projects" class="py-5 text-white">
+  <div class="container">
+    <!-- Section Title -->
+    <h2 class="text-center mb-5 fw-bold display-5 text-uppercase">Projects</h2>
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8">
+        <p class="lead text-center">
+          Explore a curated collection of my recent web development projects —
+          each showcasing modern design, scalable architecture, and AI-powered
+          functionality. From intelligent UI generators to full-stack platforms,
+          these works reflect my passion for clean code and creative
+          problem-solving.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      @for (project of projects; track $index) {
+      <div class="col-md-6 col-lg-4">
+        <div class="glass-card h-100 p-4 shadow-lg border-0 text-white">
+          <div class="d-flex align-items-center justify-content-center mb-4">
+            <div
+              class="bg-gradient card-bg rounded-circle d-flex justify-content-center align-items-center"
+            >
+              <i class="bi fs-4 text-white" [ngClass]="project.icon"></i>
+            </div>
+          </div>
+          <h5 class="fw-semibold text-center mb-2">
+            {{ project.title }}
+          </h5>
+          <p class="small text-center mb-3 px-2">
+            {{ project.description }}
+          </p>
+          <div class="text-center mt-2">
+            <p><strong>Tech Stack</strong> : {{ project.techStack }}</p>
+          </div>
+        </div>
+      </div>
+      }
+
+      <!-- Add more project cards below using the same structure -->
+    </div>
+  </div>
+</section>

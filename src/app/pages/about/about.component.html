@@ -1,0 +1,38 @@
+<section id="about" class="py-5 text-white">
+  <div class="container">
+    <!-- Heading -->
+    <h2 class="text-center mb-5 fw-bold display-5 text-uppercase">About Me</h2>
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8">
+        <p class="lead text-center">
+          I’m a full-stack developer with a passion for crafting clean,
+          performant, and scalable web apps. With a strong foundation in
+          Angular,React and Node.js, I love building things that make a real
+          impact — powered by modern tech and intelligent logic.
+        </p>
+      </div>
+    </div>
+    <div class="row g-4 mb-5">
+      @for (section of aboutSections; track section.title) {
+      <div class="col-md-6 col-lg-4">
+        <div class="glass-card p-4 h-100 shadow-lg">
+          <div class="text-center mb-3">
+            <div
+              class="d-flex card-bg align-items-center justify-content-center bg-gradient rounded-circle mb-3"
+            >
+              <i [class]="section.icon" class="fs-3 text-white mb-2"></i>
+            </div>
+            <!-- <i class="bi {{ section.icon }} display-6 text-white"></i> -->
+            <h5 class="mt-3 fw-semibold">{{ section.title }}</h5>
+          </div>
+          <p class="text-center small">
+            {{ section.description }}
+          </p>
+        </div>
+      </div>
+      }
+    </div>
+
+    <!-- Personal Outro -->
+  </div>
+</section>
