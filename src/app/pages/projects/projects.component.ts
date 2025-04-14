@@ -35,7 +35,7 @@ export class ProjectsComponent {
       icon: 'bi-envelope-at',
       description:
         'An AI-powered email writing platform using Gemini AI. Features include guest/user usage limits, admin dashboards, dynamic plans, and editable AI prompts — all wrapped in a modern Angular + Bootstrap UI.',
-      techStack: 'React,Node,Express,MySQl',
+      techStack: 'Angular,Node,Express,MySQl,Gemini',
     },
     {
       title: 'MERN URL Shortener',
